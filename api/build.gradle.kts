@@ -3,10 +3,13 @@ plugins {
     alias(libs.plugins.spingKotlin)
 }
 
-dependencies {
-
-}
+group = "com.github.sudarshanmhasrup"
+version = "0.0.1-dev"
 
 repositories {
+    mavenCentral()
+}
+
+dependencies {
 
 }
