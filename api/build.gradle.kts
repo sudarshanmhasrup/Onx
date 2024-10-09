@@ -13,6 +13,7 @@ repositories {
 dependencies {
     implementation(libs.springWeb)
     implementation(libs.springDataJpa)
+    implementation(libs.postgresql)
 }
 
 sourceSets {
