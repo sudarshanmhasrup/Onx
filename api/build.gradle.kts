@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.spingKotlin)
+    alias(libs.plugins.jpaKotin)
 }
 
 group = "com.github.sudarshanmhasrup"
