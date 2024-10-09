@@ -4,12 +4,14 @@ springKotlinPlugin = "2.0.20"
 springBootStarter = "3.3.4"
 springDataJpaStarter = "3.3.4"
 postgresqlDriver = "42.7.4"
+jpaKotlinPlugin = "2.0.20"
 
 [libraries]
-springWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootStarter"}
-springDataJpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springDataJpaStarter"}
-postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresqlDriver"}
+springWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootStarter" }
+springDataJpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springDataJpaStarter" }
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresqlDriver" }
 
 [plugins]
-kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinPlugin"}
-spingKotlin = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "springKotlinPlugin"}
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinPlugin" }
+spingKotlin = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "springKotlinPlugin" }
+jpaKotin = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "jpaKotlinPlugin" }
