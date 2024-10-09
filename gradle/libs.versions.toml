@@ -1,8 +1,10 @@
 [versions]
 kotlinPlugin = "2.0.20"
 springKotlinPlugin = "2.0.20"
+springBootStarter = "3.3.4"
 
 [libraries]
+springWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootStarter"}
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinPlugin"}
