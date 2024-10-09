@@ -1,4 +1,4 @@
-package com.github.sudarshanmhasrup.onx
+package com.github.sudarshanmhasrup
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
