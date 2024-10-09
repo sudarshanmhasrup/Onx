@@ -1,7 +1,9 @@
 [versions]
-kotlinJvm = "2.0.20"
+kotlinPlugin = "2.0.20"
+springKotlinPlugin = "2.0.20"
 
 [libraries]
 
 [plugins]
-kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinJvm"}
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinPlugin"}
+spingKotlin = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "springKotlinPlugin"}
