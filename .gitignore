@@ -6,6 +6,7 @@
 
 # Build folders
 build
+api/build
 
 # Kotlin files
 .kotlin
