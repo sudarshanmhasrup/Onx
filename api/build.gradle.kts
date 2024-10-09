@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-
+    implementation(libs.springWeb)
 }
 
 sourceSets {
