@@ -10,3 +10,6 @@ api/build
 
 # Kotlin files
 .kotlin
+
+# Application properties
+api/src/main/resources/application.properties
