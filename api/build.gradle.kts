@@ -13,3 +13,12 @@ repositories {
 dependencies {
 
 }
+
+sourceSets {
+    main {
+        kotlin.srcDirs("src/main")
+    }
+    test {
+        kotlin.srcDirs("src/test")
+    }
+}
