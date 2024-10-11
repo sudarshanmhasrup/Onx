@@ -15,4 +15,5 @@ dependencies {
     implementation(libs.springBootWebStarter)
     implementation(libs.kotlixSerialization)
     implementation(libs.json)
+    implementation(libs.springBootDataJpaStarter)
 }
