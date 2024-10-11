@@ -17,4 +17,5 @@ dependencies {
     implementation(libs.springBootWebStarter)
     implementation(libs.kotlixSerialization)
     implementation(libs.springBootDataJpaStarter)
+    runtimeOnly(libs.kotlinReflect)
 }
