@@ -6,19 +6,20 @@ fun validateUserDTO(userDTO: UserDTO): Pair<Boolean, String> {
 
     val missingFieldsList = mutableListOf<String>()
 
-    when {
-        userDTO.userId.isBlank() -> missingFieldsList.add("userId")
-        userDTO.username.isBlank() -> missingFieldsList.add("username")
-        userDTO.firstName.isBlank() -> missingFieldsList.add("firstName")
-        userDTO.emailAddress.isBlank() -> missingFieldsList.add("emailAddress")
-        userDTO.age <= 0 -> missingFieldsList.add("age")
-        userDTO.gender.isBlank() -> missingFieldsList.add("gender")
-        userDTO.birthdate.isBlank() -> missingFieldsList.add("birthdate")
-        userDTO.city.isBlank() -> missingFieldsList.add("city")
-        userDTO.state.isBlank() -> missingFieldsList.add("state")
-        userDTO.country.isBlank() -> missingFieldsList.add("country")
-        else -> return Pair(true, "Information is valid!")
-    }
+    if (userDTO.userId.isBlank()) missingFieldsList.add("userId")
+    if (userDTO.username.isBlank()) missingFieldsList.add("username")
+    if (userDTO.firstName.isBlank()) missingFieldsList.add("firstName")
+    if (userDTO.emailAddress.isBlank()) missingFieldsList.add("emailAddress")
+    if (userDTO.age <= 0) missingFieldsList.add("age")
+    if (userDTO.gender.isBlank()) missingFieldsList.add("gender")
+    if (userDTO.birthdate.isBlank()) missingFieldsList.add("birthdate")
+    if (userDTO.city.isBlank()) missingFieldsList.add("city")
+    if (userDTO.state.isBlank()) missingFieldsList.add("state")
+    if (userDTO.country.isBlank()) missingFieldsList.add("country")
 
-    return Pair(false, "${missingFieldsList.joinToString( separator = ",")} cannot be empty!")
+    return if (missingFieldsList.isEmpty()) {
+        Pair(true, "Information is valid!")
+    } else {
+        Pair(false, "${missingFieldsList.joinToString( separator = ", ")} cannot be empty!")
+    }
 }
