@@ -6,6 +6,7 @@
 
 # Kotlin
 .kotlin
+api/src/test/Main.kt
 
 # Build
 api/build

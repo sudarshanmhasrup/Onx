@@ -2,7 +2,6 @@ package com.sudarshanmhasrup.onx
 
 import com.sudarshanmhasrup.onx.domains.dto.request.UserDTO
 import com.sudarshanmhasrup.onx.domains.entities.UserEntity
-import org.springframework.cglib.core.Local
 import java.time.LocalDate
 
 fun UserEntity.toUserDTO() = UserDTO(

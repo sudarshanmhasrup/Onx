@@ -19,3 +19,9 @@ dependencies {
     implementation(libs.springBootDataJpaStarter)
     runtimeOnly(libs.kotlinReflect)
 }
+
+sourceSets {
+    test {
+        kotlin.srcDirs("src/test")
+    }
+}
