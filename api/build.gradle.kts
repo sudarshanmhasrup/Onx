@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.kotlinSpring)
     alias(libs.plugins.kotlinSerialization)
+    alias(libs.plugins.kotlinJpa)
 }
 
 group = "com.sudarshanmhasrup"
