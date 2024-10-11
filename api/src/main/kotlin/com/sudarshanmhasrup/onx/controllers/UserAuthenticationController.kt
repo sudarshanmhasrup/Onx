@@ -1,7 +1,9 @@
 package com.sudarshanmhasrup.onx.controllers
 
 import com.sudarshanmhasrup.onx.domains.dto.request.UserDTO
+import com.sudarshanmhasrup.onx.domains.dto.response.UserAccountCreationError
 import com.sudarshanmhasrup.onx.domains.dto.response.UserAccountCreationSuccessful
+import com.sudarshanmhasrup.onx.handlers.validateUserDTO
 import com.sudarshanmhasrup.onx.services.AuthService
 import com.sudarshanmhasrup.onx.toUserDTO
 import com.sudarshanmhasrup.onx.toUserEntity
@@ -21,18 +23,24 @@ class UserAuthenticationController(
     @PostMapping("/v1/auth/create-new-account")
     fun createNewAccount(@RequestBody userDTO: UserDTO): JsonElement {
 
-        val response = UserAccountCreationSuccessful(
-            status = "Succeed!",
-            statusCode = 200,
-            response = "A new account is created successfully with username: @${userDTO.username}!",
-            data = userDTO
-        )
+        val(validInformation, message) = validateUserDTO(userDTO)
 
-
-        authService.createNewAccount(userDTO.toUserEntity()).toUserDTO()
-
-        val result = Json.encodeToJsonElement(response)
-
-        return result
+        if (!validInformation) {
+            val jsonObject = Json.encodeToJsonElement(UserAccountCreationError(
+                statusCode = 400,
+                status = "Failed",
+                response = message
+            ))
+            return jsonObject
+        } else {
+            val jsonObject = Json.encodeToJsonElement(UserAccountCreationSuccessful(
+                status = "Succeed!",
+                statusCode = 200,
+                response = "A new account is created successfully with username: @${userDTO.username}!",
+                data = userDTO
+            ))
+            authService.createNewAccount(userDTO.toUserEntity()).toUserDTO()
+            return jsonObject
+        }
     }
 }
