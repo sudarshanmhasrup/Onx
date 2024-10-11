@@ -1,15 +1,20 @@
 package com.sudarshanmhasrup.onx.domains.entities
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import jakarta.persistence.*
+import java.time.LocalDate
 
 @Entity
 @Table(name = "users")
 data class UserEntity(
 
     @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_id_seq")
+    @SequenceGenerator(
+        name = "users_id_seq",
+        sequenceName = "users_id_seq",
+        allocationSize = 1
+    )
     val id: Long? = null,
 
     @Column(name = "user_id")
@@ -37,7 +42,7 @@ data class UserEntity(
     val gender: String,
 
     @Column(name = "date_of_birth")
-    val birthdate: String,
+    val birthdate: LocalDate,
 
     @Column(name = "city")
     val city: String,
@@ -55,5 +60,5 @@ data class UserEntity(
     val profilePicture: String,
 
     @Column(name = "date_of_account_creation")
-    val accountCreationDate: String
+    val accountCreationDate: LocalDate
 )

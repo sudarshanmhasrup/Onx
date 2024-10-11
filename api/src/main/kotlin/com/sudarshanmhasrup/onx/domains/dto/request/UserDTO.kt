@@ -1,6 +1,8 @@
 package com.sudarshanmhasrup.onx.domains.dto.request
 
 import kotlinx.serialization.Serializable
+import java.time.LocalDate
+import java.util.*
 
 @Serializable
 data class UserDTO(
@@ -17,6 +19,5 @@ data class UserDTO(
     val state: String = "",
     val country: String = "",
     val bio: String = "",
-    val profilePicture: String = "",
-    val accountCreationDate: String = ""
+    val profilePicture: String = ""
 )
