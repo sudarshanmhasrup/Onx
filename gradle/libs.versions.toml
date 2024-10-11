@@ -3,6 +3,7 @@ kotlin = "2.0.20"
 kotlinSpring = "2.0.20"
 springBootWebStarter = "3.3.4"
 kotlinxSerialization = "1.5.1"
+kotlinSerialization = "2.0.20"
 
 [libraries]
 springBootWebStarter = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootWebStarter" }
@@ -11,3 +12,4 @@ kotlixSerialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-seriali
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlinSpring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlinSpring" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization" }
