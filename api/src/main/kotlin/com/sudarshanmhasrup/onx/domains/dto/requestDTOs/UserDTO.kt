@@ -1,5 +1,8 @@
 package com.sudarshanmhasrup.onx.domains.dto.requestDTOs
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class UserDTO(
     val userId: String = "",
     val username: String = "",
