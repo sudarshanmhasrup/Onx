@@ -19,6 +19,7 @@ dependencies {
     implementation(libs.springBootDataJpaStarter)
     runtimeOnly(libs.kotlinReflect)
     testImplementation(libs.jupiterApi)
+    testImplementation(libs.jupiterEngine)
 }
 
 sourceSets {
