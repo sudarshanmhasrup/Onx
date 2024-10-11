@@ -1,0 +1,10 @@
+# Idea configuration
+.idea
+
+# Gradle cache
+.gradle
+
+# Kotlin
+.kotlin
+
+
