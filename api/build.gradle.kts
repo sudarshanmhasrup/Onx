@@ -26,3 +26,7 @@ sourceSets {
         kotlin.srcDirs("src/test")
     }
 }
+
+tasks.test {
+    useJUnitPlatform()
+}
