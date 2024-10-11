@@ -1,8 +1,7 @@
-package com.sudarshanmhasrup.onx.domains.dto.responseDTOs
+package com.sudarshanmhasrup.onx.domains.dto.response
 
-import com.sudarshanmhasrup.onx.domains.dto.requestDTOs.UserDTO
+import com.sudarshanmhasrup.onx.domains.dto.request.UserDTO
 import kotlinx.serialization.Serializable
-import org.apache.catalina.User
 
 @Serializable
 data class UserAccountCreationSuccessful(

@@ -4,10 +4,12 @@ kotlinSpring = "2.0.20"
 springBootWebStarter = "3.3.4"
 kotlinxSerialization = "1.5.1"
 kotlinSerialization = "2.0.20"
+json = "20240303"
 
 [libraries]
 springBootWebStarter = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootWebStarter" }
 kotlixSerialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+json = { group = "org.json", name = "json", version.ref = "json" }
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

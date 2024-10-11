@@ -1,8 +1,7 @@
 package com.sudarshanmhasrup.onx.controllers
 
-import com.sudarshanmhasrup.onx.domains.dto.requestDTOs.UserDTO
-import com.sudarshanmhasrup.onx.domains.dto.responseDTOs.UserAccountCreationSuccessful
-import kotlinx.serialization.Serializable
+import com.sudarshanmhasrup.onx.domains.dto.request.UserDTO
+import com.sudarshanmhasrup.onx.domains.dto.response.UserAccountCreationSuccessful
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import org.springframework.web.bind.annotation.PostMapping

@@ -1,4 +1,4 @@
-package com.sudarshanmhasrup.onx.domains.dto.requestDTOs
+package com.sudarshanmhasrup.onx.domains.dto.request
 
 import kotlinx.serialization.Serializable
 

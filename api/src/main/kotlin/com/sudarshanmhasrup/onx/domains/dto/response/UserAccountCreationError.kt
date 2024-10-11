@@ -1,4 +1,4 @@
-package com.sudarshanmhasrup.onx.domains.dto.responseDTOs
+package com.sudarshanmhasrup.onx.domains.dto.response
 
 import kotlinx.serialization.Serializable
 
