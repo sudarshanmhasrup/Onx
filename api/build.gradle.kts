@@ -14,6 +14,6 @@ repositories {
 dependencies {
     implementation(libs.springBootWebStarter)
     implementation(libs.kotlixSerialization)
-    implementation(libs.json)
+    implementation(libs.postgresql)
     implementation(libs.springBootDataJpaStarter)
 }

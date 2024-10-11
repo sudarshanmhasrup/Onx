@@ -9,3 +9,6 @@
 
 # Build
 api/build
+
+# Application properties
+api/src/main/resources/application.properties
