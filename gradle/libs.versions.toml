@@ -4,8 +4,8 @@ kotlinSpring = "2.0.20"
 springBootWebStarter = "3.3.4"
 
 [libraries]
-spring.boot.web.starter = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootWebStarter"}
+springBootWebStarter = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootWebStarter"}
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-kotlin.spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlinSpring" }
+kotlinSpring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlinSpring" }
