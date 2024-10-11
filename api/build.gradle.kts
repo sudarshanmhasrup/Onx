@@ -18,6 +18,7 @@ dependencies {
     implementation(libs.kotlixSerialization)
     implementation(libs.springBootDataJpaStarter)
     runtimeOnly(libs.kotlinReflect)
+    testImplementation(libs.jupiterApi)
 }
 
 sourceSets {

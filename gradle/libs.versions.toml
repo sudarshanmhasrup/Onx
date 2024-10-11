@@ -8,13 +8,15 @@ springBootDataJpaStarter = "3.3.4"
 postgresql = "42.7.4"
 kotlinJpa = "2.0.20"
 kotlinReflect = "2.0.20"
+jupiterApi = "5.11.2"
 
 [libraries]
 springBootWebStarter = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBootWebStarter" }
 kotlixSerialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 springBootDataJpaStarter = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springBootDataJpaStarter" }
 postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
-kotlinReflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlinReflect"}
+kotlinReflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlinReflect" }
+jupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "jupiterApi" }
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
