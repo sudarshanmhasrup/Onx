@@ -12,5 +12,5 @@ repositories {
 
 dependencies {
     implementation(libs.springBootWebStarter)
-    runtimeOnly(libs.kotlixSerialization)
+    implementation(libs.kotlixSerialization)
 }

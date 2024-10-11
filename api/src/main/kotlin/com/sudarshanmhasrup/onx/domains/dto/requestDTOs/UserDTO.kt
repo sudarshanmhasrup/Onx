@@ -1,6 +1,4 @@
-package com.sudarshanmhasrup.onx.domains.dto
-
-import java.sql.Date
+package com.sudarshanmhasrup.onx.domains.dto.requestDTOs
 
 data class UserDTO(
     val userId: String = "",
