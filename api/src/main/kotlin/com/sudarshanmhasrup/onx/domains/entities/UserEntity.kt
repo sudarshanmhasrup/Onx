@@ -15,6 +15,9 @@ data class UserEntity(
     @Column(name = "user_id")
     val userId: String,
 
+    @Column(name = "username")
+    val username: String,
+
     @Column(name = "first_name")
     val firstName: String,
 
