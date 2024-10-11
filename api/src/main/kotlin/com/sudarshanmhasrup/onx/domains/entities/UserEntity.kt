@@ -10,7 +10,7 @@ import jakarta.persistence.Table
 data class UserEntity(
 
     @Id
-    val id: Long?,
+    val id: Long? = null,
 
     @Column(name = "user_id")
     val userId: String,

@@ -3,6 +3,8 @@ package com.sudarshanmhasrup.onx.controllers
 import com.sudarshanmhasrup.onx.domains.dto.request.UserDTO
 import com.sudarshanmhasrup.onx.domains.dto.response.UserAccountCreationSuccessful
 import com.sudarshanmhasrup.onx.services.AuthService
+import com.sudarshanmhasrup.onx.toUserDTO
+import com.sudarshanmhasrup.onx.toUserEntity
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonElement
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class UserAuthenticationController(
-    val authService: AuthService
+    private val authService: AuthService
 ) {
 
     @PostMapping("/v1/auth/create-new-account")
@@ -26,6 +28,8 @@ class UserAuthenticationController(
             data = userDTO
         )
 
+
+        authService.createNewAccount(userDTO.toUserEntity()).toUserDTO()
 
         val result = Json.encodeToJsonElement(response)
 
